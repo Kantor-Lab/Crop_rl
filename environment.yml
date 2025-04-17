@@ -1,0 +1,17 @@
+name: crop_rl
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - matplotlib
+  - gymnasium
+  - cudatoolkit=12.1
+  - pip:
+      - stable-baselines3
+      - torch==2.1.0+cu121
+      - torchvision==0.16.0+cu121
+      - torchaudio==2.1.0+cu121
+      - cloudpickle
